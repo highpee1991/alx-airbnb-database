@@ -6,4 +6,4 @@ This diagram illustrates the database design for the Airbnb Clone backend.
 - Highlights relationships and foreign keys
 - Show nomalization 3NF level
 - show the schema design 
-- Saved as: airbnb_erd.drawio (editable) and airbnb_erd.png (preview)
+- Saved as: airbnb_erd.drawio (editable) and airbnb_erd.png (preview).
