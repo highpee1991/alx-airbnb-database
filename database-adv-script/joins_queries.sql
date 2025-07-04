@@ -9,7 +9,7 @@ SELECT
     users.last_name,
     users.email
 FROM bookings
-INNER JOIN users ON bookings.booking_id = users.user_id
+INNER JOIN users ON bookings.booking_id = users.user_id;
 
 SELECT 
     properties.property_id,
@@ -18,7 +18,7 @@ SELECT
     reviews.rating,
     reviews.comment
 FROM properties
-LEFT JOIN reviews ON properties.property_id = reviews.property_id
+LEFT JOIN reviews ON properties.property_id = reviews.property_id;
 
 SELECT 
     users.user_id,

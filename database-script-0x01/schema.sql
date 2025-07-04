@@ -40,7 +40,7 @@ CREATE TABLE payments (
     payment_id UUID PRIMARY KEY,
     booking_id UUID NOT NULL,
     payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    payment_method VARCHAR(10) CHECK (payment_method IN ('credit_card', 'paypal', 'stripe')),
+    payment_method VARCHAR(20) CHECK (payment_method IN ('credit_card', 'paypal', 'stripe')),
     FOREIGN KEY (booking_id) REFERENCES bookings(booking_id)
 );
 
