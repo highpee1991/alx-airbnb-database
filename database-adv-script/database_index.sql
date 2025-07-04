@@ -12,3 +12,11 @@ CREATE INDEX idx_properties_location ON properties(location)
 
 -- index to get all listing by a specific host
 CREATE INDEX idx_properties_host_id ON properties(host_id)
+
+
+-- Test query performance using EXPLAIN ANALYZE
+EXPLAIN ANALYZE
+SELECT * FROM bookings WHERE user_id = '11111111-1111-1111-1111-111111111111';
+
+EXPLAIN ANALYZE
+SELECT * FROM users WHERE email = 'johndoe@example.com';
